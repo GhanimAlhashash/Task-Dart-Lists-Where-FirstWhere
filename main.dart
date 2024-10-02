@@ -4,8 +4,8 @@ void main() {
     return ages.where((age) => age > minAge).toList();
   }
 
-  int firstOdd(List<int> number) {
-    return number.firstWhere(
+  int firstOdd(List<int> numbers) {
+    return numbers.firstWhere(
       (number) => number.isOdd,
       orElse: () => 0,
     );
