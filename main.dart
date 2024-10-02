@@ -1,5 +1,5 @@
 void main() {
-  ////these are the where and first where functions 
+  ////these are the where and first where functions
   List<int> filterVisitors(List<int> ages, int minAge) {
     return ages.where((age) => age > minAge).toList();
   }
@@ -10,7 +10,8 @@ void main() {
       orElse: () => 0,
     );
   }
-///All variables used
+
+  ///All variables used
 
   List<int> numbers = [5, 3, 15, 4, 1];
   List<int> listOfAges = [25, 23, 21, 6, 16];
@@ -18,7 +19,6 @@ void main() {
   int largestNum = numbers[0];
   int minimumAge = 18;
   List<int> allowedVisitors = filterVisitors(listOfAges, minimumAge);
-  
 
   ///for each that adds all numbers together
   numbers.forEach((number) {
@@ -33,27 +33,9 @@ void main() {
       return;
     }
   });
+
   ///print results of all functions in the tasks
   print(sumOfNumbers);
   print("people who are allowed $allowedVisitors");
   print(firstOdd([2, 4, 6, 8, 10]));
-}
-
-
-
-///another solution i wanted to do
-void findMinAge (){
-
-int age = [];
-int theMinimumAge = 18;
-if (age > theMinimumAge) {
-
-
-} else {
-
-}
-
-}
-
-
 }
