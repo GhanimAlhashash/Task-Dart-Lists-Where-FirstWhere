@@ -13,7 +13,7 @@ void main() {
 
   ///All variables used
 
-  List<int> numbers = [5, 3, 15, 4, 1];
+  List<int> numbers = [5, 3, 15, 417, 515];
   List<int> listOfAges = [25, 23, 21, 6, 16];
   int sumOfNumbers = 0;
   int largestNum = numbers[0];
@@ -26,15 +26,14 @@ void main() {
   });
 
   ///for each that checks the difference and takes the largest number adn prints it
-  numbers.forEach((largest) {
-    if (largestNum < largest) {
-      print("largest number is $largest");
-    } else {
-      return;
+  numbers.forEach((numberNew) {
+    if (largestNum < numberNew) {
+      largestNum = numberNew;
     }
   });
 
   ///print results of all functions in the tasks
+  print("largest number is $largestNum");
   print(sumOfNumbers);
   print("people who are allowed $allowedVisitors");
   print(firstOdd([2, 4, 6, 8, 10]));
